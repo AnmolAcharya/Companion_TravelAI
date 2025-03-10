@@ -1,0 +1,300 @@
+/* Overall Container */
+.about-container {
+    width: 98%;  /* Increased width to almost full */
+    max-width: 1300px; /* Increased for better layout */
+    margin: auto;
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Banner Image */
+.about-banner {
+    width: 100%;
+    height: 350px; /* Increased height */
+    object-fit: cover;
+    display: block;
+}
+
+/* Trip Details Container */
+.about-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /*better look and stance*/
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    background-color: #fff;
+}
+
+/* Destination (Top Label) */
+.destination-box {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b6777; /* Soft Blue */
+    padding: 18px 0;
+    background: rgba(43, 103, 119, 0.15); /* Light Blue Tint */
+    border-radius: 14px;
+    width: 85%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Other Detail Boxes */
+.detail-box {
+    background: rgba(40, 167, 69, 0.15); /* Soft Green */
+    padding: 15px 25px;
+    border-radius: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #28a745; /* Green shade */
+    display: inline-block;
+    text-align: center;
+    min-width: 140px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-banner {
+        height: 280px;
+    }
+
+    .about-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .destination-box {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .detail-box {
+        min-width: auto;
+        width: 85%;
+    }
+}
+
+/* ========================= */
+/* Hotels CSS section Recommendations */
+/* ========================= */
+
+.hotels-container {
+    width: 95%;
+    max-width: 1100px; /* Increased max-width for better layout */
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hotels-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b6777; /*Soft Blue*/
+    margin-bottom: 20px;
+}
+
+/* Hotel Card Grid Layout */
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* More balanced */
+    gap: 2rem;
+    margin-top: 15px;
+}
+
+/* Individual Hotel Card */
+.hotel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    text-align: center;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Hotel Image */
+.hotel-image {
+    width: 100%;
+    max-width: 260px;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 10px;
+}
+
+/* Hotel Details */
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.hotel-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(21, 171, 221);
+    margin-bottom: 8px;
+}
+
+.hotel-price {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+/* Blurry text for clicking */
+.hotel-click-info {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5); /* Faded black */
+    text-align: center;
+    margin-top: 8px;
+    filter: blur(0.4px);
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hotels-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .hotel-image {
+        max-width: 220px;
+        height: 140px;
+    }
+
+    .hotel-name {
+        font-size: 18px;
+    }
+
+    .hotel-price {
+        font-size: 14px;
+    }
+}
+
+
+/* ========================= */
+/* Itinerary CSS section */
+/* ========================= */
+
+.itinerary-container {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.itinerary-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b6777; /* Soft Blue */
+    margin-bottom: 20px;
+}
+
+/* Itinerary Grid Layout */
+.itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Individual Itinerary Card */
+.itinerary-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itinerary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Itinerary Image */
+.itinerary-image {
+    width: 100%;
+    height: 250px;
+    /* object-fit: cover; */
+    border-radius: 12px;
+}
+
+/* Itinerary Details */
+.itinerary-details {
+    padding: 12px;
+    text-align: left;
+    width: 100%;
+}
+
+.itinerary-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b6777;
+    margin-bottom: 6px;
+}
+
+.itinerary-info {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Icons & Data */
+.itinerary-info span {
+    font-weight: bold;
+    color: #28a745; /* Green for key details */
+}
+
+
+/* Blurry text for clicking */
+.itinerary-click-info {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 8px;
+    filter: blur(0.4px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .itinerary-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .itinerary-image {
+        height: 150px;
+    }
+
+    .itinerary-name {
+        font-size: 18px;
+    }
+
+    .itinerary-info {
+        font-size: 13px;
+    }
+}

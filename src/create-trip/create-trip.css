@@ -1,0 +1,236 @@
+.create-trip-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #F4E1C1;
+  }
+  
+  .trip-form-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .trip-title {
+    font-size: 2.5rem;
+    color: lightcoral;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .trip-subtitle {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .form-group {
+    margin-bottom: 2.5rem;
+  }
+  
+  .form-group h2 {
+    font-size: 1.5rem;
+    color: lightcoral;
+    margin-bottom: 1.5rem;
+  }
+
+  .destination-input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .destination-autocomplete {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #c0eb25;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: black;
+    background-color: wheat;
+  }
+  
+  /* Placeholder Styling */
+  .destination-autocomplete .css-1wa3eu0-placeholder {
+    color: #888 !important;
+    font-style: italic;
+  }
+  
+  /* Dropdown Styling */
+  .pac-container {
+    border-radius: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    z-index: 1000;
+  }
+  
+  .pac-item {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .pac-item:hover {
+    background-color: #faf3e7;
+  }
+  
+  .pac-item-query {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .pac-matched {
+    font-weight: bold;
+  }
+  
+  /* Clear Button */
+  .clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .clear-btn:hover {
+    background: darkred;
+  }
+  
+  
+  .destination-select,
+  .days-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: wheat
+  }
+  
+  .destination-select:focus,
+  .days-input:focus {
+    outline: none;
+    border-color: #c0eb25;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+  }
+  
+  .budget-options,
+  .travel-with-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .budget-card,
+  .travel-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .budget-card:hover,
+  .travel-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .budget-card.selected,
+  .travel-card.selected {
+    border-color: #2563eb;
+    background: rgba(37,99,235,0.05);
+  }
+  
+  .budget-icon,
+  .travel-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .budget-card h3,
+  .travel-card h3 {
+    font-size: 1.2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .budget-card p,
+  .travel-card p {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .generate-trip-btn {
+    background: #2563eb;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .generate-trip-btn:hover {
+    background: #1d4ed8;
+  }
+  
+  @media (max-width: 768px) {
+    .create-trip-container {
+      padding: 1rem;
+    }
+  
+    .trip-title {
+      font-size: 2rem;
+    }
+  
+    .budget-options,
+    .travel-with-options {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .destination-input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .pac-container {
+    border-radius: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    z-index: 1000;
+  }
+  
+  .pac-item {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .pac-item:hover {
+    background-color: #faf3e7;
+  }
+  
+  .pac-item-query {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .pac-matched {
+    font-weight: bold;
+  }
