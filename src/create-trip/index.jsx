@@ -96,7 +96,7 @@ function CreateTrip() {
         <h1 className="trip-title">Tell us your travel preferences 🏖️ 🌴</h1>
         <p className="trip-subtitle">
           Just provide some basic information, and our trip planner will
-          generate a customized itinerary based on your preferences.
+          generate a list of hotels and places to visit based on your preferences.
         </p>
 
         <div className="form-group">
